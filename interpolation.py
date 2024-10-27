@@ -103,3 +103,20 @@ plt.plot(xs,Fys,"b.")
 plt.show() 
 
 
+'''
+Taylor conclusion:
+-factorial gets real big real fast (exceed type limits of long, etc.), bad for super high accuracy
+-x0 needs to be within period of calculated point.
+-requires some intuition of the functions frequency
+-still gives good approx for small n. better with less computing used
+-obv limitation: need to know derivs, so really only useful for easier calc of diff analytical stuff
+-O(n)
+'''
+
+'''
+Lagrange conclusions:
+-precision depends highly on size of dataset. need many points for accurate result
+    important to have points at a sufficiently narrow interval, especially compared to periodic function frequencies
+    compare spacing of 1 vs 0.1 (20 vs 200 points)
+- O(n^2)
+'''
