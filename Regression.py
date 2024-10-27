@@ -83,9 +83,9 @@ def fit(x,y, o = 1, ForceOrigin =False):    #done with normal equations
     #plot f()
     plotX = []
     plotY = []
-    for i in range(0,100):  # can modify point spacing and range for different data
-        plotX.append(i*0.0001)
-        plotY.append( f(o, X, i*0.0001) )
+    for i in range(0,40):#100):  #modify point spacing and range for different data
+        plotX.append(i)#*0.0001)
+        plotY.append( f(o, X, i))#*0.0001) )
 
     plt.plot(plotX,plotY)
 
