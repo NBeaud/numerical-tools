@@ -1,5 +1,5 @@
 #--------------------------------------------------
-# Assignment 3: Root finding
+# Tool 3: Root finding
 # Author: Nicolas Beaudoin
 # September 28, 2023
 #--------------------------------------------------
