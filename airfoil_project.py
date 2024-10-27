@@ -251,8 +251,8 @@ def populateGrid(grid,pxs,Upys,Lpys):
     xptr = 0                    #ptr for x in grid
     yptr = y0                   #ptr for y in grid
     
-    for i in range(len(grid[0]):
-        for j in range(len(grid)//2):   #may leave last row unpopulated/out of range
+    #for i in range(len(grid[0])):
+        #for j in range(len(grid)//2):   #may leave last row unpopulated/out of range
             #if within profile space:
                    #continue    #cell stays 0
             #calcCell grid[y0+j][i]
