@@ -2,7 +2,9 @@ Tool 1: Interpolation
   -Lagrange and Taylor series interpolation comparison
 
 Tool 2: Regression by LSBF
-  - Least Squared Best Fit in linear and higher order functions
+  - Least Squared Best Fit in linear and higher order functions,
+  - Applied to stress-strain data.
+  - Computation of various statistical metrics
 
 Tool 3: Root finding
   - Bisection, Regula Falsi, Newton Raphson and secant method
