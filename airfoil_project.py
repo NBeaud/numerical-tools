@@ -39,12 +39,6 @@ def triDiagSolve(A,b):
 #Cubic spline interpolation for airfoil profile, determines second derivatives
 def cubicSpline(xs,ys):
     #returns df2[] for known xs[], ys[]
-    """
-    For whatever reason, the textbook has a lot of errors for this chapter.
-    Eq 18.37 has two typos in it, eq B18.3.2 also has one, ex 18.10 has calcultion erros ...
-
-    I had to spend a lot of time debugging this...
-    """
     A = []
     b = []
     for i in range(len(xs)-2):
@@ -63,8 +57,8 @@ def cubicSpline(xs,ys):
                 A[i].append(0)
 
         #populate b
-        b.append(6*(ys[i+2]-ys[i+1])/(xs[i+2]-xs[i+1])    #this equation has a typo in textbook,
-                 + 6*(ys[i]-ys[i+1])/(xs[i+1]-xs[i]))   #took a while to debug...
+        b.append(6*(ys[i+2]-ys[i+1])/(xs[i+2]-xs[i+1])  
+                 + 6*(ys[i]-ys[i+1])/(xs[i+1]-xs[i]))   
 
     df2 = [0] + triDiagSolve(A,b) + [0]     #add zero at ends because f"(x)=0 at those points
     return df2                              #vector of second derivatives is returned
